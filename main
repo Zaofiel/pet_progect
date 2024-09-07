@@ -44,7 +44,7 @@ def  detec_cat(img, model, label):
   confidence_score = prediction[0][index]
   return class_name[2:]
 
-x = detec_cat('/content/18.jpeg', '/content/keras_model.h5', '/content/labels.txt')
+x = detec_cat('картинка', '/content/keras_model.h5', '/content/labels.txt')
 
 if x.strip() == 'желтый':
   print('На светофоре жёлтый')
